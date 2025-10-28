@@ -1,24 +1,26 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BookSnap - Book Details</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BookSnap - Details</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="sidebar">
-    <h2>📚 BookSnap</h2>
-    <nav>
-      <a href="index.html">🏠 Home</a>
-      <a href="books.html">📖 Book Summaries</a>
-      <a href="series.html">📚 Series Summaries</a>
-    </nav>
-  </div>
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+      <h2 class="brand">BookSnap</h2>
+      <nav>
+        <a href="index.html">🏠 Home</a>
+        <a href="books.html">📖 Book Summaries</a>
+        <a href="series.html">📚 Series Summaries</a>
+      </nav>
+    </div>
+  </aside>
 
-  <div class="content" id="bookDetails">
-    <!-- Dynamic details appear here -->
-  </div>
+  <main class="content" id="detailsContent">
+    <!-- Filled by script.js -->
+  </main>
 
   <script src="script.js"></script>
 </body>
