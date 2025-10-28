@@ -1,66 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Book Summaries</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookSnap - Book Summaries</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Book Summary Website</h1>
+  <div class="sidebar">
+    <h2>📚 BookSnap</h2>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="books.html" class="active">Book Summaries</a>
-      <a href="series.html">Series Summaries</a>
+      <a href="index.html">🏠 Home</a>
+      <a href="books.html" class="active">📖 Book Summaries</a>
+      <a href="series.html">📚 Series Summaries</a>
     </nav>
-  </header>
+  </div>
 
-  <section class="book-section">
+  <div class="content">
     <h1>Book Summaries</h1>
-
-    <!-- 🔍 Search bar -->
-    <div class="search-container">
-      <input
-        type="text"
-        id="searchBar"
-        placeholder="Search books by title or author..."
-      />
+    <div class="book-grid" id="bookList">
+      <!-- Books will be loaded here -->
     </div>
-
-    <div class="book-grid">
-      <div class="book-card" data-book="A">
-        <img src="images/tom-gates.jpg" alt="Tom Gates" />
-        <h3>Tom Gates: Mega Make and Do and Stories Too!</h3>
-        <p><strong>Author:</strong> Liz Pichon</p>
-        <p>A funny, creative, doodle-filled book!</p>
-        <button class="show-summary">Show Book Summary</button>
-        <div class="book-summary"></div>
-      </div>
-
-      <div class="book-card" data-book="B">
-        <img src="images/matilda.jpg" alt="Matilda" />
-        <h3>Matilda</h3>
-        <p><strong>Author:</strong> Roald Dahl</p>
-        <p>A story about a brilliant girl who loves reading.</p>
-        <button class="show-summary">Show Book Summary</button>
-        <div class="book-summary"></div>
-      </div>
-
-      <div class="book-card" data-book="C">
-        <img src="images/wimpy-kid.jpg" alt="Wimpy Kid" />
-        <h3>Diary of a Wimpy Kid</h3>
-        <p><strong>Author:</strong> Jeff Kinney</p>
-        <p>A hilarious diary of Greg Heffley’s middle school life.</p>
-        <button class="show-summary">Show Book Summary</button>
-        <div class="book-summary"></div>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <p>Created by [Your Name], Grade 7 Project</p>
-  </footer>
+  </div>
 
   <script src="script.js"></script>
 </body>
