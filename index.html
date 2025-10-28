@@ -1,41 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Book Summary Website</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookSnap - Home</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>My Book Summary Website</h1>
+  <div class="sidebar">
+    <h2>📚 BookSnap</h2>
     <nav>
-      <a href="index.html" class="active">Home</a>
-      <a href="books.html">Book Summaries</a>
-      <a href="series.html">Series Summaries</a>
+      <a href="index.html">🏠 Home</a>
+      <a href="books.html">📖 Book Summaries</a>
+      <a href="series.html">📚 Series Summaries</a>
     </nav>
-  </header>
+  </div>
 
-  <section class="home-section">
-    <h2>Books I’ve Read</h2>
-    <div class="book-grid">
-      <div class="book-card">
-        <img src="images/tom-gates.jpg" alt="Tom Gates" />
-        <p>Tom Gates: Mega Make and Do and Stories Too!</p>
-      </div>
-      <div class="book-card">
-        <img src="images/matilda.jpg" alt="Matilda" />
-        <p>Matilda</p>
-      </div>
-      <div class="book-card">
-        <img src="images/wimpy-kid.jpg" alt="Diary of a Wimpy Kid" />
-        <p>Diary of a Wimpy Kid</p>
-      </div>
+  <div class="content">
+    <h1>Books I’ve Read</h1>
+    <div id="readBooksGrid" class="book-grid">
+      <!-- Books you’ve finished will appear here automatically -->
     </div>
-  </section>
+  </div>
 
-  <footer>
-    <p>Created by [Your Name], Grade 7 Project</p>
-  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
