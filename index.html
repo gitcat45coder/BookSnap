@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>BookSnap - Home</title>
   <link rel="stylesheet" href="style.css" />
 </head>
@@ -21,12 +21,19 @@
   <main class="content">
     <h1>Welcome back! Here are the books and series you’ve read so far.</h1>
 
+    <input 
+      type="text" 
+      id="searchBar" 
+      placeholder="Search books or series..." 
+      onkeyup="filterBooks()"
+    />
+
+    <h2 class="section-heading">Your Read Books 📖</h2>
     <div id="readBooksGrid" class="book-grid">
-      <!-- Filled by script.js from localStorage -->
+      <!-- Filled by script.js -->
     </div>
   </main>
 
   <script src="script.js"></script>
 </body>
 </html>
-
